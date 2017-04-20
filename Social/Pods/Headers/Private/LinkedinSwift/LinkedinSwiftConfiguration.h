@@ -1,0 +1,1 @@
+../../../LinkedinSwift/LinkedinSwift/LinkedinSwift/sources/Entities/LinkedinSwiftConfiguration.h

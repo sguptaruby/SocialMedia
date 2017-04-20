@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		693E3B161EA0A51400298495 /* LinkedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E3B151EA0A51400298495 /* LinkedIn.swift */; };
+		693E3B181EA0C4B700298495 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E3B171EA0C4B700298495 /* Facebook.swift */; };
+		693E3B1A1EA0C80A00298495 /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E3B191EA0C80A00298495 /* Google.swift */; };
+		693E3B1E1EA0F55C00298495 /* TwitterLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E3B1D1EA0F55C00298495 /* TwitterLogin.swift */; };
+		6941C93D1E9D1750006DB394 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6941C93C1E9D1750006DB394 /* IQKeyboardManager.framework */; };
+		6941C93F1E9D1DDB006DB394 /* IQKeyboardManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6941C93C1E9D1750006DB394 /* IQKeyboardManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6941C9421E9D2013006DB394 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941C9411E9D2013006DB394 /* RegistrationViewController.swift */; };
+		6941C9441E9D2026006DB394 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6941C9431E9D2026006DB394 /* Registration.storyboard */; };
+		695582461E9E2BA30007E882 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 695582451E9E2BA30007E882 /* GoogleService-Info.plist */; };
+		6955825E1E9E4F9B0007E882 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955825D1E9E4F9B0007E882 /* SafariServices.framework */; };
+		695582601E9E4FA80007E882 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955825F1E9E4FA80007E882 /* SystemConfiguration.framework */; };
+		695582721E9E525A0007E882 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955826B1E9E525A0007E882 /* GoogleAppUtilities.framework */; };
+		695582731E9E525A0007E882 /* GoogleAuthUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955826C1E9E525A0007E882 /* GoogleAuthUtilities.framework */; };
+		695582741E9E525A0007E882 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955826D1E9E525A0007E882 /* GoogleNetworkingUtilities.framework */; };
+		695582751E9E525A0007E882 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6955826E1E9E525A0007E882 /* GoogleSignIn.bundle */; };
+		695582761E9E525A0007E882 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955826F1E9E525A0007E882 /* GoogleSignIn.framework */; };
+		695582771E9E525A0007E882 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695582701E9E525A0007E882 /* GoogleSymbolUtilities.framework */; };
+		695582781E9E525A0007E882 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695582711E9E525A0007E882 /* GoogleUtilities.framework */; };
+		6955827A1E9E52930007E882 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695582791E9E52930007E882 /* AddressBook.framework */; };
+		6955827C1E9E52AE0007E882 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955827B1E9E52AE0007E882 /* libz.tbd */; };
+		6958FFA31EA89A9D002B1BE4 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6958FFA21EA89A9D002B1BE4 /* Instagram.swift */; };
+		695B71E11E9DFFC300B5EA10 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695B71E01E9DFFC300B5EA10 /* FBSDKLoginKit.framework */; };
+		695B71E31E9E028B00B5EA10 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695B71E21E9E028B00B5EA10 /* FBSDKCoreKit.framework */; };
+		695B71E81E9E153600B5EA10 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695B71E71E9E153600B5EA10 /* Bolts.framework */; };
+		695C680D1EA4DE9F009597FE /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695C680C1EA4DE9F009597FE /* FBSDKShareKit.framework */; };
+		695C680F1EA4EAE3009597FE /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C680E1EA4EAE3009597FE /* ShareViewController.swift */; };
+		699BA34B1E9D0F3E00AB2565 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699BA34A1E9D0F3E00AB2565 /* LoginViewController.swift */; };
+		699BA34D1E9D0F5B00AB2565 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699BA34C1E9D0F5B00AB2565 /* Login.storyboard */; };
+		69A85F201E9CDA0F0022F649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A85F1F1E9CDA0F0022F649 /* AppDelegate.swift */; };
+		69A85F221E9CDA0F0022F649 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A85F211E9CDA0F0022F649 /* ViewController.swift */; };
+		69A85F251E9CDA0F0022F649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A85F231E9CDA0F0022F649 /* Main.storyboard */; };
+		69A85F271E9CDA0F0022F649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A85F261E9CDA0F0022F649 /* Assets.xcassets */; };
+		69A85F2A1E9CDA0F0022F649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A85F281E9CDA0F0022F649 /* LaunchScreen.storyboard */; };
+		69A85F351E9CDA0F0022F649 /* SocialMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A85F341E9CDA0F0022F649 /* SocialMediaTests.swift */; };
+		69A85F401E9CDA0F0022F649 /* SocialMediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A85F3F1E9CDA0F0022F649 /* SocialMediaUITests.swift */; };
+		76B12DD0C17EF9F52400CE70 /* libPods-SocialMedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DCD5634C26EE48B7766955 /* libPods-SocialMedia.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69A85F311E9CDA0F0022F649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A85F141E9CDA0E0022F649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A85F1B1E9CDA0E0022F649;
+			remoteInfo = SocialMedia;
+		};
+		69A85F3C1E9CDA0F0022F649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A85F141E9CDA0E0022F649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A85F1B1E9CDA0E0022F649;
+			remoteInfo = SocialMedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6941C9401E9D1DDC006DB394 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6941C93F1E9D1DDB006DB394 /* IQKeyboardManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695582571E9E49390007E882 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		56DCD5634C26EE48B7766955 /* libPods-SocialMedia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialMedia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		693E3B151EA0A51400298495 /* LinkedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedIn.swift; sourceTree = "<group>"; };
+		693E3B171EA0C4B700298495 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
+		693E3B191EA0C80A00298495 /* Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
+		693E3B1D1EA0F55C00298495 /* TwitterLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLogin.swift; sourceTree = "<group>"; };
+		6941C93C1E9D1750006DB394 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = "<group>"; };
+		6941C9411E9D2013006DB394 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		6941C9431E9D2026006DB394 /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		695582451E9E2BA30007E882 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		695582531E9E45BC0007E882 /* SocialMedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialMedia-Bridging-Header.h"; sourceTree = "<group>"; };
+		6955825D1E9E4F9B0007E882 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		6955825F1E9E4FA80007E882 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6955826B1E9E525A0007E882 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		6955826C1E9E525A0007E882 /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAuthUtilities.framework; sourceTree = "<group>"; };
+		6955826D1E9E525A0007E882 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		6955826E1E9E525A0007E882 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		6955826F1E9E525A0007E882 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		695582701E9E525A0007E882 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		695582711E9E525A0007E882 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		695582791E9E52930007E882 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6955827B1E9E52AE0007E882 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6958FFA21EA89A9D002B1BE4 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		695B71E01E9DFFC300B5EA10 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		695B71E21E9E028B00B5EA10 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		695B71E71E9E153600B5EA10 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		695C680C1EA4DE9F009597FE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		695C680E1EA4EAE3009597FE /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		695C68101EA50179009597FE /* SocialMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialMedia.entitlements; sourceTree = "<group>"; };
+		699BA34A1E9D0F3E00AB2565 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		699BA34C1E9D0F5B00AB2565 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		69A85F1C1E9CDA0F0022F649 /* SocialMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A85F1F1E9CDA0F0022F649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69A85F211E9CDA0F0022F649 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		69A85F241E9CDA0F0022F649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69A85F261E9CDA0F0022F649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A85F291E9CDA0F0022F649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69A85F2B1E9CDA0F0022F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A85F301E9CDA0F0022F649 /* SocialMediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A85F341E9CDA0F0022F649 /* SocialMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaTests.swift; sourceTree = "<group>"; };
+		69A85F361E9CDA0F0022F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A85F3B1E9CDA0F0022F649 /* SocialMediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A85F3F1E9CDA0F0022F649 /* SocialMediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaUITests.swift; sourceTree = "<group>"; };
+		69A85F411E9CDA0F0022F649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD18AFD508EFD1B7245DCE4 /* Pods-SocialMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.release.xcconfig"; sourceTree = "<group>"; };
+		D978DBFBB81E07A88CA4B191 /* Pods-SocialMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A85F191E9CDA0E0022F649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955827C1E9E52AE0007E882 /* libz.tbd in Frameworks */,
+				6955827A1E9E52930007E882 /* AddressBook.framework in Frameworks */,
+				695582601E9E4FA80007E882 /* SystemConfiguration.framework in Frameworks */,
+				695582741E9E525A0007E882 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				6955825E1E9E4F9B0007E882 /* SafariServices.framework in Frameworks */,
+				695B71E11E9DFFC300B5EA10 /* FBSDKLoginKit.framework in Frameworks */,
+				695582771E9E525A0007E882 /* GoogleSymbolUtilities.framework in Frameworks */,
+				695B71E31E9E028B00B5EA10 /* FBSDKCoreKit.framework in Frameworks */,
+				695C680D1EA4DE9F009597FE /* FBSDKShareKit.framework in Frameworks */,
+				695582781E9E525A0007E882 /* GoogleUtilities.framework in Frameworks */,
+				695582731E9E525A0007E882 /* GoogleAuthUtilities.framework in Frameworks */,
+				695582721E9E525A0007E882 /* GoogleAppUtilities.framework in Frameworks */,
+				6941C93D1E9D1750006DB394 /* IQKeyboardManager.framework in Frameworks */,
+				695B71E81E9E153600B5EA10 /* Bolts.framework in Frameworks */,
+				695582761E9E525A0007E882 /* GoogleSignIn.framework in Frameworks */,
+				76B12DD0C17EF9F52400CE70 /* libPods-SocialMedia.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A85F2D1E9CDA0F0022F649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A85F381E9CDA0F0022F649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1211A81A816F14E54D1662B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D978DBFBB81E07A88CA4B191 /* Pods-SocialMedia.debug.xcconfig */,
+				7FD18AFD508EFD1B7245DCE4 /* Pods-SocialMedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6955825C1E9E4F9B0007E882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6955827B1E9E52AE0007E882 /* libz.tbd */,
+				695582791E9E52930007E882 /* AddressBook.framework */,
+				6955825F1E9E4FA80007E882 /* SystemConfiguration.framework */,
+				6955825D1E9E4F9B0007E882 /* SafariServices.framework */,
+				56DCD5634C26EE48B7766955 /* libPods-SocialMedia.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		695B71E41E9E0C1800B5EA10 /* SocialLoginManager  */ = {
+			isa = PBXGroup;
+			children = (
+				693E3B151EA0A51400298495 /* LinkedIn.swift */,
+				693E3B171EA0C4B700298495 /* Facebook.swift */,
+				693E3B191EA0C80A00298495 /* Google.swift */,
+				693E3B1D1EA0F55C00298495 /* TwitterLogin.swift */,
+				6958FFA21EA89A9D002B1BE4 /* Instagram.swift */,
+			);
+			path = "SocialLoginManager ";
+			sourceTree = "<group>";
+		};
+		699BA3471E9D0E1700AB2565 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				699BA3481E9D0F1900AB2565 /* Login */,
+				699BA3491E9D0F1900AB2565 /* Registration */,
+				69A85F211E9CDA0F0022F649 /* ViewController.swift */,
+				69A85F231E9CDA0F0022F649 /* Main.storyboard */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		699BA3481E9D0F1900AB2565 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				699BA34A1E9D0F3E00AB2565 /* LoginViewController.swift */,
+				699BA34C1E9D0F5B00AB2565 /* Login.storyboard */,
+				695C680E1EA4EAE3009597FE /* ShareViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		699BA3491E9D0F1900AB2565 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				6941C9411E9D2013006DB394 /* RegistrationViewController.swift */,
+				6941C9431E9D2026006DB394 /* Registration.storyboard */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		69A85F131E9CDA0E0022F649 = {
+			isa = PBXGroup;
+			children = (
+				695582531E9E45BC0007E882 /* SocialMedia-Bridging-Header.h */,
+				69A85F4D1E9CDDD50022F649 /* FrameWork */,
+				69A85F1E1E9CDA0F0022F649 /* SocialMedia */,
+				69A85F331E9CDA0F0022F649 /* SocialMediaTests */,
+				69A85F3E1E9CDA0F0022F649 /* SocialMediaUITests */,
+				69A85F1D1E9CDA0F0022F649 /* Products */,
+				6955825C1E9E4F9B0007E882 /* Frameworks */,
+				1211A81A816F14E54D1662B8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		69A85F1D1E9CDA0F0022F649 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A85F1C1E9CDA0F0022F649 /* SocialMedia.app */,
+				69A85F301E9CDA0F0022F649 /* SocialMediaTests.xctest */,
+				69A85F3B1E9CDA0F0022F649 /* SocialMediaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A85F1E1E9CDA0F0022F649 /* SocialMedia */ = {
+			isa = PBXGroup;
+			children = (
+				695C68101EA50179009597FE /* SocialMedia.entitlements */,
+				695B71E41E9E0C1800B5EA10 /* SocialLoginManager  */,
+				699BA3471E9D0E1700AB2565 /* Class */,
+				69A85F1F1E9CDA0F0022F649 /* AppDelegate.swift */,
+				69A85F261E9CDA0F0022F649 /* Assets.xcassets */,
+				69A85F281E9CDA0F0022F649 /* LaunchScreen.storyboard */,
+				695582451E9E2BA30007E882 /* GoogleService-Info.plist */,
+				69A85F2B1E9CDA0F0022F649 /* Info.plist */,
+			);
+			path = SocialMedia;
+			sourceTree = "<group>";
+		};
+		69A85F331E9CDA0F0022F649 /* SocialMediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				69A85F341E9CDA0F0022F649 /* SocialMediaTests.swift */,
+				69A85F361E9CDA0F0022F649 /* Info.plist */,
+			);
+			path = SocialMediaTests;
+			sourceTree = "<group>";
+		};
+		69A85F3E1E9CDA0F0022F649 /* SocialMediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69A85F3F1E9CDA0F0022F649 /* SocialMediaUITests.swift */,
+				69A85F411E9CDA0F0022F649 /* Info.plist */,
+			);
+			path = SocialMediaUITests;
+			sourceTree = "<group>";
+		};
+		69A85F4D1E9CDDD50022F649 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				695C680C1EA4DE9F009597FE /* FBSDKShareKit.framework */,
+				6955826B1E9E525A0007E882 /* GoogleAppUtilities.framework */,
+				6955826C1E9E525A0007E882 /* GoogleAuthUtilities.framework */,
+				6955826D1E9E525A0007E882 /* GoogleNetworkingUtilities.framework */,
+				6955826E1E9E525A0007E882 /* GoogleSignIn.bundle */,
+				6955826F1E9E525A0007E882 /* GoogleSignIn.framework */,
+				695582701E9E525A0007E882 /* GoogleSymbolUtilities.framework */,
+				695582711E9E525A0007E882 /* GoogleUtilities.framework */,
+				695B71E71E9E153600B5EA10 /* Bolts.framework */,
+				695B71E21E9E028B00B5EA10 /* FBSDKCoreKit.framework */,
+				695B71E01E9DFFC300B5EA10 /* FBSDKLoginKit.framework */,
+				6941C93C1E9D1750006DB394 /* IQKeyboardManager.framework */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A85F1B1E9CDA0E0022F649 /* SocialMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A85F441E9CDA0F0022F649 /* Build configuration list for PBXNativeTarget "SocialMedia" */;
+			buildPhases = (
+				D61ADB2F89592EB52C3A9B8A /* [CP] Check Pods Manifest.lock */,
+				69A85F181E9CDA0E0022F649 /* Sources */,
+				69A85F191E9CDA0E0022F649 /* Frameworks */,
+				69A85F1A1E9CDA0E0022F649 /* Resources */,
+				6941C9401E9D1DDC006DB394 /* Embed Frameworks */,
+				695582571E9E49390007E882 /* Embed PlugIns */,
+				83B251AB200B4805766663E7 /* [CP] Embed Pods Frameworks */,
+				C80C33386EED5EB30D6CCB6A /* [CP] Copy Pods Resources */,
+				693E3B1B1EA0DE9800298495 /* ShellScript */,
+				693E3B1C1EA0DEA200298495 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialMedia;
+			productName = SocialMedia;
+			productReference = 69A85F1C1E9CDA0F0022F649 /* SocialMedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A85F2F1E9CDA0F0022F649 /* SocialMediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A85F471E9CDA0F0022F649 /* Build configuration list for PBXNativeTarget "SocialMediaTests" */;
+			buildPhases = (
+				69A85F2C1E9CDA0F0022F649 /* Sources */,
+				69A85F2D1E9CDA0F0022F649 /* Frameworks */,
+				69A85F2E1E9CDA0F0022F649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A85F321E9CDA0F0022F649 /* PBXTargetDependency */,
+			);
+			name = SocialMediaTests;
+			productName = SocialMediaTests;
+			productReference = 69A85F301E9CDA0F0022F649 /* SocialMediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69A85F3A1E9CDA0F0022F649 /* SocialMediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A85F4A1E9CDA0F0022F649 /* Build configuration list for PBXNativeTarget "SocialMediaUITests" */;
+			buildPhases = (
+				69A85F371E9CDA0F0022F649 /* Sources */,
+				69A85F381E9CDA0F0022F649 /* Frameworks */,
+				69A85F391E9CDA0F0022F649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A85F3D1E9CDA0F0022F649 /* PBXTargetDependency */,
+			);
+			name = SocialMediaUITests;
+			productName = SocialMediaUITests;
+			productReference = 69A85F3B1E9CDA0F0022F649 /* SocialMediaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A85F141E9CDA0E0022F649 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Sagar.Gupta;
+				TargetAttributes = {
+					69A85F1B1E9CDA0E0022F649 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T4Q3XEB88Y;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					69A85F2F1E9CDA0F0022F649 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 69A85F1B1E9CDA0E0022F649;
+					};
+					69A85F3A1E9CDA0F0022F649 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 69A85F1B1E9CDA0E0022F649;
+					};
+				};
+			};
+			buildConfigurationList = 69A85F171E9CDA0E0022F649 /* Build configuration list for PBXProject "SocialMedia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69A85F131E9CDA0E0022F649;
+			productRefGroup = 69A85F1D1E9CDA0F0022F649 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A85F1B1E9CDA0E0022F649 /* SocialMedia */,
+				69A85F2F1E9CDA0F0022F649 /* SocialMediaTests */,
+				69A85F3A1E9CDA0F0022F649 /* SocialMediaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A85F1A1E9CDA0E0022F649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6941C9441E9D2026006DB394 /* Registration.storyboard in Resources */,
+				699BA34D1E9D0F5B00AB2565 /* Login.storyboard in Resources */,
+				69A85F2A1E9CDA0F0022F649 /* LaunchScreen.storyboard in Resources */,
+				69A85F271E9CDA0F0022F649 /* Assets.xcassets in Resources */,
+				69A85F251E9CDA0F0022F649 /* Main.storyboard in Resources */,
+				695582751E9E525A0007E882 /* GoogleSignIn.bundle in Resources */,
+				695582461E9E2BA30007E882 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A85F2E1E9CDA0F0022F649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A85F391E9CDA0F0022F649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		693E3B1B1EA0DE9800298495 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 2ac45f990d706ce93c84480c56d14957a724f96e 64f42cc8928823d8847f9853ab9f868dca4f618c65409957741164f44e554018";
+		};
+		693E3B1C1EA0DEA200298495 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		83B251AB200B4805766663E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80C33386EED5EB30D6CCB6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61ADB2F89592EB52C3A9B8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A85F181E9CDA0E0022F649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699BA34B1E9D0F3E00AB2565 /* LoginViewController.swift in Sources */,
+				693E3B161EA0A51400298495 /* LinkedIn.swift in Sources */,
+				69A85F221E9CDA0F0022F649 /* ViewController.swift in Sources */,
+				693E3B1E1EA0F55C00298495 /* TwitterLogin.swift in Sources */,
+				693E3B181EA0C4B700298495 /* Facebook.swift in Sources */,
+				693E3B1A1EA0C80A00298495 /* Google.swift in Sources */,
+				6958FFA31EA89A9D002B1BE4 /* Instagram.swift in Sources */,
+				695C680F1EA4EAE3009597FE /* ShareViewController.swift in Sources */,
+				6941C9421E9D2013006DB394 /* RegistrationViewController.swift in Sources */,
+				69A85F201E9CDA0F0022F649 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A85F2C1E9CDA0F0022F649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A85F351E9CDA0F0022F649 /* SocialMediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A85F371E9CDA0F0022F649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A85F401E9CDA0F0022F649 /* SocialMediaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69A85F321E9CDA0F0022F649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A85F1B1E9CDA0E0022F649 /* SocialMedia */;
+			targetProxy = 69A85F311E9CDA0F0022F649 /* PBXContainerItemProxy */;
+		};
+		69A85F3D1E9CDA0F0022F649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A85F1B1E9CDA0E0022F649 /* SocialMedia */;
+			targetProxy = 69A85F3C1E9CDA0F0022F649 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69A85F231E9CDA0F0022F649 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A85F241E9CDA0F0022F649 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		69A85F281E9CDA0F0022F649 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A85F291E9CDA0F0022F649 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69A85F421E9CDA0F0022F649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sagar.gupta/Documents/WorkPlace/SocialMedia/SocialMedia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69A85F431E9CDA0F0022F649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sagar.gupta/Documents/WorkPlace/SocialMedia/SocialMedia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A85F451E9CDA0F0022F649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D978DBFBB81E07A88CA4B191 /* Pods-SocialMedia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialMedia/SocialMedia.entitlements;
+				DEVELOPMENT_TEAM = T4Q3XEB88Y;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameWork",
+					"\"$(SRCROOT)/FrameWork/FBSDKCoreKit.framework\"",
+					"\"$(SRCROOT)/FrameWork/FBSDKLoginKit.framework\"",
+				);
+				INFOPLIST_FILE = SocialMedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hiteshi.SocialMedia.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sagar.gupta/Documents/WorkPlace/SocialMedia/SocialMedia-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		69A85F461E9CDA0F0022F649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD18AFD508EFD1B7245DCE4 /* Pods-SocialMedia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialMedia/SocialMedia.entitlements;
+				DEVELOPMENT_TEAM = T4Q3XEB88Y;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameWork",
+					"\"$(SRCROOT)/FrameWork/FBSDKCoreKit.framework\"",
+					"\"$(SRCROOT)/FrameWork/FBSDKLoginKit.framework\"",
+				);
+				INFOPLIST_FILE = SocialMedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hiteshi.SocialMedia.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sagar.gupta/Documents/WorkPlace/SocialMedia/SocialMedia-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		69A85F481E9CDA0F0022F649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialMediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiteshi.SocialMediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialMedia.app/SocialMedia";
+			};
+			name = Debug;
+		};
+		69A85F491E9CDA0F0022F649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocialMediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiteshi.SocialMediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialMedia.app/SocialMedia";
+			};
+			name = Release;
+		};
+		69A85F4B1E9CDA0F0022F649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SocialMediaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiteshi.SocialMediaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SocialMedia;
+			};
+			name = Debug;
+		};
+		69A85F4C1E9CDA0F0022F649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SocialMediaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hiteshi.SocialMediaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SocialMedia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A85F171E9CDA0E0022F649 /* Build configuration list for PBXProject "SocialMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A85F421E9CDA0F0022F649 /* Debug */,
+				69A85F431E9CDA0F0022F649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A85F441E9CDA0F0022F649 /* Build configuration list for PBXNativeTarget "SocialMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A85F451E9CDA0F0022F649 /* Debug */,
+				69A85F461E9CDA0F0022F649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A85F471E9CDA0F0022F649 /* Build configuration list for PBXNativeTarget "SocialMediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A85F481E9CDA0F0022F649 /* Debug */,
+				69A85F491E9CDA0F0022F649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A85F4A1E9CDA0F0022F649 /* Build configuration list for PBXNativeTarget "SocialMediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A85F4B1E9CDA0F0022F649 /* Debug */,
+				69A85F4C1E9CDA0F0022F649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A85F141E9CDA0E0022F649 /* Project object */;
+}
